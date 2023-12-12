@@ -180,12 +180,20 @@ hr{
 .title-projects h1 {
     font-size: 40px;
     color: #8b5a3a;
+    text-align: center;
+}
+
+.content-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .content-projects img{
-    width: 20vw;
-    height: 45vh;
-    margin: 50px;
+    min-width: 400px;
+    width: 25vw;
+    height: 430px;
+    margin: 30px;
     box-shadow: 5px 5px 20px 0px black;
     border-radius: 1%;
     transition: 0.3s;
@@ -194,4 +202,31 @@ hr{
 .content-projects img:hover{
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.imagen-fullscreen{
+}
+
+.view-more{
+    display: none;
+}
+
+#view-more{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #B0926A;
+}
+
+#content-btnViewMore{
+    margin-top: 5vh;
+    height: 10vh;
+}
+
+#view-more:hover{
+    background-color:#8b5a3a;
+    transition: 1s;
 }
