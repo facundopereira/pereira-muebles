@@ -204,8 +204,6 @@ hr{
     cursor: pointer;
 }
 
-.imagen-fullscreen{
-}
 
 .view-more{
     display: none;
@@ -229,4 +227,112 @@ hr{
 #view-more:hover{
     background-color:#8b5a3a;
     transition: 1s;
+}
+
+/*overlay*/
+
+.overlay{
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0 , .5);
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .8s ease;
+    visibility: hidden;
+    opacity: 0;
+    user-select: none;
+}
+
+.overlay .slideshow{
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255 , .9);
+    color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+}
+
+.slideshow img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.btn_cerrar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color:#fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_cerrar:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.botones {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+   /*  display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.botones:hover > svg{
+    transform: scale(1.3);
+    transition:  all .7s ease; 
+}
+
+.atras{
+    left: 20px;
+}
+
+.adelante {
+    right: 20px;
+}
+
+/*CONTACTO*/
+
+/* #contacto {
+
+} */
+
+#container-contacto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-contact h1{
+    width: 99vw;
+    font-size: 40px;
+    color: #8b5a3a;
+    text-align: center;
+    margin: 5vw 0vw 5vw 0vw;
+}
+
+#form-contact{
+    width: 45vw;
+    height: 80vh;
+}
+
+#form-contact form{
+    align-items: center ;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
 }

@@ -106,28 +106,75 @@
             <div class="title-projects">
                 <h1>Proyectos Finalizados</h1>
             </div>
-            <div>
-                
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>  
-                
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
-            
+            <div class="overlay" id="overlay">
+                <div class="slideshow">
+                    <span class="btn_cerrar">
+                        <svg id="cerrar" xmlns="http://www.w3.org/2000/svg" height="25" width="25" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                    </span>
+                    <div class="botones atras">
+                        <svg id="atras" xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>
+                    </div>
+                    <div  class="botones adelante">
+                        <svg id="adelante" xmlns="http://www.w3.org/2000/svg" height="16" width="10" viewBox="0 0 320 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>
+                    </div>
+                    <img src="" alt="" id="img_slidershow">
+                </div>
             </div>
-            <div class="content-projects">
-                <img src="/img/WhatsApp Image 2023-11-12 at 09.43.40 (8).jpeg" alt="">
-                <img src="/img/WhatsApp Image 2023-11-12 at 09.49.58 (6).jpeg" alt="">
-                <img src="/img/WhatsApp Image 2023-11-12 at 09.43.40 (16).jpeg" alt="">
-                <img class="view-more" src="img/WhatsApp Image 2023-11-12 at 09.49.56 (8).jpeg" alt="">
-                <img class="view-more" src="img/WhatsApp Image 2023-11-12 at 09.49.56 (1).jpeg" alt="">
-                <img onclick="fullScreen(event)" class="view-more" src="img/WhatsApp Image 2023-11-12 at 09.49.56 (4).jpeg" alt="">
+            <div class="content-projects"> 
+                <img class="img" src="/img/WhatsApp Image 2023-11-12 at 09.43.40 (8).jpeg" alt="" data-numero="0">
+                <img class="img" src="/img/WhatsApp Image 2023-11-12 at 09.49.58 (6).jpeg" alt="" data-numero="1">
+                <img class="img" src="/img/WhatsApp Image 2023-11-12 at 09.43.40 (16).jpeg" alt="" data-numero="2">
+                <img class="view-more img" src="img/WhatsApp Image 2023-11-12 at 09.49.56 (8).jpeg" alt="" data-numero="3">
+                <img class="view-more img" src="img/WhatsApp Image 2023-11-12 at 09.49.56 (1).jpeg" alt="" data-numero="4">
+                <img class="view-more img " src="img/WhatsApp Image 2023-11-12 at 09.49.56 (4).jpeg" alt="" data-numero="5">
             </div>
             <div id="content-btnViewMore">
                 <button id="view-more" onclick="mostrarMas()"> Ver más </button>
             </div>
-            <div>
-                <a href="#"></a>
+        </div>
+    </section>
+    <hr>
+    <section id="contacto">
+        <div id="container-contacto">
+            <div id="title-contact">
+                <h1> Contacto </h1>
+            </div>
+            <div id="form-contact">
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="48b3b28d-8e07-4e75-87da-14f0bd0dbc26">
+                    <input type="text" name="name" placeholder="Tú Nombre" required>
+                    <input type="number" name="number" placeholder="Número telefónico">
+                    <input type="email" name="Email" placeholder="Dirección de correo" required>
+                    <input type="text" name="tema" placeholder="Tema">
+                    <textarea name="texto" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <button type="submit">
+                        Enviar Mensaje 
+                        <img src="img/enviar-datos.png" alt="">
+                        <span class="overlay"></span>
+                    </button>      
+                </form>
+            </div>
+            <div id="map">
+                <img src="img/ubicacion.jpeg" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <img src="img/mapa.png" alt="">
+                            <a href="https://www.google.com/maps/dir//-34.6995226,-56.2213612/@-34.7006308,-56.2216343,17z/data=!4m2!4m1!3e0?entry=ttu" target="_blank" style="text-decoration: none;" class="maps">
+                                18 de Mayo, Misiones 5813
+                            </a>
+                        </li>
+                        <li>
+                            <img src="img/telefono.png" alt="">
+                            Llamanos: 2363 7774 
+                        </li>
+                        <li>
+                            <img src="img/email.png" alt="">
+                            Email: pereirafacundo66@gmail.com
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
