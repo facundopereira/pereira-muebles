@@ -20,7 +20,7 @@
                     <ul>
                         <li><a href="">Sobre nosotros</a></li>
                         <li><a href="">Trabajos a medida</a></li>
-                        <li><a href="">Contacto</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -136,44 +136,43 @@
     <hr>
     <section id="contacto">
         <div id="container-contacto">
-            <div id="title-contact">
-                <h1> Contacto </h1>
-            </div>
-            <div id="form-contact">
-                <form action="https://api.web3forms.com/submit" method="post">
-                    <input type="hidden" name="access_key" value="48b3b28d-8e07-4e75-87da-14f0bd0dbc26">
-                    <input type="text" name="name" placeholder="Tú Nombre" required>
-                    <input type="number" name="number" placeholder="Número telefónico">
-                    <input type="email" name="Email" placeholder="Dirección de correo" required>
-                    <input type="text" name="tema" placeholder="Tema">
-                    <textarea name="texto" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                    <button type="submit">
-                        Enviar Mensaje 
-                        <img src="img/enviar-datos.png" alt="">
-                        <span class="overlay"></span>
-                    </button>      
-                </form>
-            </div>
-            <div id="map">
-                <img src="img/ubicacion.jpeg" alt="">
-                <div class="info">
-                    <ul>
-                        <li>
-                            <img src="img/mapa.png" alt="">
-                            <a href="https://www.google.com/maps/dir//-34.6995226,-56.2213612/@-34.7006308,-56.2216343,17z/data=!4m2!4m1!3e0?entry=ttu" target="_blank" style="text-decoration: none;" class="maps">
-                                18 de Mayo, Misiones 5813
-                            </a>
-                        </li>
-                        <li>
-                            <img src="img/telefono.png" alt="">
-                            Llamanos: 2363 7774 
-                        </li>
-                        <li>
-                            <img src="img/email.png" alt="">
-                            Email: pereirafacundo66@gmail.com
-                        </li>
-                    </ul>
+            <h1> Contacto </h1>
+            <div id="formulario">
+                <div id="form-contact">
+                    <form action="https://api.web3forms.com/submit" method="post">
+                        <input type="hidden" name="access_key" value="48b3b28d-8e07-4e75-87da-14f0bd0dbc26">
+                        <input type="text" name="name" placeholder="Tú Nombre" required>
+                        <input type="number" name="number" placeholder="Número telefónico">
+                        <input type="email" name="Email" placeholder="Dirección de correo" required>
+                        <input type="text" name="tema" placeholder="Tema">
+                        <textarea name="texto" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                        <button type="submit">
+                            Enviar Mensaje 
+                            <img src="img/enviar-datos.png" alt="">
+                            <span class="overlay"></span>
+                        </button>      
+                    </form>
+                </div>
+                <div id="map">
+                    <div class="info">
+                        <ul>    
+                            <li>
+                                <img src="img/mapa.png" alt="">
+                                <a href="https://www.google.com/maps/dir//-34.6995226,-56.2213612/@-34.7006308,-56.2216343,17z/data=!4m2!4m1!3e0?entry=ttu" target="_blank" style="text-decoration: none;" class="maps">
+                                    18 de Mayo, Misiones 5813
+                                </a>
+                            </li>
+                            <li>
+                                <img src="img/telefono.png" alt="">
+                                Llamanos: 2363 7774 
+                            </li>
+                            <li>
+                                <img src="img/email.png" alt="">
+                                Email: pereirafacundo66@gmail.com
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
