@@ -137,3 +137,25 @@ function mostrarMas() {
     }
   }
 }
+
+function toggleDropdown() {
+  var dropdown = document.getElementById("myDropdown");
+  let dropbtn = document.getElementsByClassName("dropbtn")[0]
+  console.log(dropbtn[0])
+  dropdown.classList.toggle("show");
+}
+
+// Cierra la barra desplegable si el usuario hace clic fuera de ella
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      let dropbtn = document.getElementsByClassName("dropbtn")[0]
+      for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+          }
+      }
+  }
+}
+

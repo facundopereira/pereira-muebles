@@ -23,8 +23,9 @@ header{
 
 nav{
     width: 100%;
-    height: 30vh;
+    height: 10vh;
     padding-top: 10px;
+    margin-bottom: 20vh;
 }
 
 #nav-container{
@@ -40,6 +41,52 @@ nav{
 
 #nick{
     color: #FAE7C9;
+    display: block;
+}
+
+/*barra desplegable*/
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la barra desplegable */
+.dropdown {
+    display: none;
+}
+
+.dropdown img{
+    width: 40px;
+    height: 40px;
+    background-color:#8b5a3a;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
+    background-color:#B0926A;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
 }
 
 
@@ -47,8 +94,6 @@ nav{
     display: flex;
     align-items: center;
     text-align: center;
-    width: auto;
-
 }
 
 .nav-content ul {
@@ -92,7 +137,7 @@ nav{
 }
 
 .header-content h1{
-    font-size: 100px;
+    font-size: 90px;
 }
 
 .header-content p{
@@ -117,6 +162,72 @@ nav{
     
 }
 
+@media only screen and (max-width: 1000px) {
+    .nav-content ul{
+        display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    .dropdown {
+        display: inline-block;
+        margin:15px
+    }
+  }
+/*SOBRE NOSOTROS*/
+
+#sobre-nosotros{
+    margin-bottom: 10vh;
+}
+
+#sobre-nosotros div h1 {
+    display: block;
+    text-align: center;
+    color: #8b5a3a;
+    font-size: 40px;
+    height: 10vh;
+}
+
+#sobre-nosotros div div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    /* min-width: 750px; */
+}
+
+#sobre-nosotros div div img{
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);;
+}
+
+#sobre-nosotros div div p {
+    width: 30%;
+    font-size: 20px;
+    text-align:center;
+    margin-left: 5vw;
+    min-width: 300px;
+}
+
+@media only screen and (max-width:750px){
+    #sobre-nosotros div div p{
+        margin-top: 5vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #sobre-nosotros div div img{
+        height: 300px;
+        width: 200px;
+        margin: 0;
+    }
+}
+
 /*SECTION RESUMEN*/
 
 #resumen{
@@ -136,6 +247,7 @@ nav{
 .content-resumen{
     display: flex;
     flex-direction: column; 
+    min-width: 400px;
     width: 30%;
     height: auto;
     margin-top: 5vh;
@@ -143,6 +255,7 @@ nav{
 
 .title{
     display: flex;
+    justify-content: center;
 }
 
 .title h3{
@@ -151,6 +264,7 @@ nav{
 
 .text{
     margin-top: 15px;
+    text-align: center;
 }
 
 img{
@@ -159,9 +273,10 @@ img{
 
 hr{
     width: 50vw;
-    margin: 10vh auto 0vh auto ;
+    margin: 5vh auto 0vh auto ;
     border: 1px solid #706233;
 }
+
 
 /*SECTION PROYECTS*/
 
@@ -175,7 +290,7 @@ hr{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .title-projects{
@@ -333,7 +448,7 @@ hr{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 60vh;
+    /* height: 35vh; */
 }
 
 #form-contact form input ,#form-contact form textarea ,#form-contact form button{
@@ -395,7 +510,7 @@ hr{
 #map{
     margin-left: 40px;
     margin-bottom: 85px;
-    height: 98%;
+    height: 420px;
     width: 500px;
     border-radius: 10px;
     background-image: url(/img/ubicacion.jpeg) ;
@@ -403,10 +518,35 @@ hr{
     align-items: center;
 }
 
+@media only screen and (max-width: 600px){
+    #map{
+        margin: 30px;
+    }
+
+    #formulario{
+        width: 100vw;
+    }
+
+    #form-contact {
+        width: 80vw;
+    }
+
+    #form-contact form {
+        width: 75vw;
+    }
+
+    #form-contact input{
+        width: 100%;
+    }
+    .title-projects{
+        margin-bottom: 5vh;
+    }
+}
+
 .info{
    padding-right: 15px;
    background-color: #B0926A;
-   width: 75%;
+   width: 80%;
    margin: auto;
    border-radius: 15px;
 }
